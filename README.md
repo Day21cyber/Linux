@@ -7,13 +7,13 @@ https://github.com/Day21cyber/Linux/blob/main/Ubuntu%20xfce.sh
 ```copy
 #!/bin/bash
 
-# Update Termux
+# Memperbarui Termux
 echo "Memperbarui Termux..."
 pkg update && pkg upgrade -y
 
 # Instalasi proot-distro dan paket pendukung
 echo "Menginstal proot-distro dan paket pendukung..."
-pkg install -y proot-distro wget curl git neovim tigervnc xfce4-terminal
+pkg install -y proot-distro wget curl git neovim tightvncserver lxqt openbox
 
 # Menginstal Ubuntu melalui proot-distro
 echo "Menginstal Ubuntu..."
@@ -23,7 +23,7 @@ proot-distro install ubuntu
 echo "Konfigurasi awal Ubuntu..."
 proot-distro login ubuntu -- bash -c "
 apt update && apt upgrade -y
-apt install -y xfce4 xfce4-goodies xorg dbus-x11 tightvncserver wget curl
+apt install -y lxqt openbox tightvncserver dbus-x11 wget curl
 "
 
 # Konfigurasi VNC Server
@@ -32,7 +32,7 @@ proot-distro login ubuntu -- bash -c "
 mkdir -p ~/.vnc
 echo '#!/bin/bash
 xrdb ~/.Xresources
-startxfce4 &' > ~/.vnc/xstartup
+startlxqt &' > ~/.vnc/xstartup
 chmod +x ~/.vnc/xstartup
 tightvncserver :1
 "
