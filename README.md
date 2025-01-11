@@ -4,9 +4,9 @@ Ubuntu xfce
 https://github.com/Day21cyber/Linux/blob/main/Ubuntu%20xfce.sh
 
 ##sript
-'''copy
+```copy
 
-#!/bin/bash
+(#!/bin/bash
 
 # Update Termux
 echo "Memperbarui Termux..."
@@ -67,6 +67,6 @@ rm wps-office.deb
 echo "Instalasi selesai! Untuk menjalankan Ubuntu dengan GUI:"
 echo "1. Jalankan: proot-distro login ubuntu"
 echo "2. Jalankan: tightvncserver :1"
-echo "3. Gunakan aplikasi VNC Viewer di HP Anda dan sambungkan ke localhost:5901"
+echo "3. Gunakan aplikasi VNC Viewer di HP Anda dan sambungkan ke localhost:5901")
 
 ---
