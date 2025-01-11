@@ -68,4 +68,5 @@ echo "Instalasi selesai! Untuk menjalankan Ubuntu dengan GUI:"
 echo "1. Jalankan: proot-distro login ubuntu"
 echo "2. Jalankan: tightvncserver :1"
 echo "3. Gunakan aplikasi VNC Viewer di HP Anda dan sambungkan ke localhost:5901"
+
 ---
